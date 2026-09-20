@@ -52,14 +52,14 @@ job_finder_agent/
 
 ## Installation
 
-Run all installation commands from the project directory:
-
-Clone the repository and enter the project directory:
+Open a terminal, clone the repository, and enter the project directory:
 
 ```bash
 git clone https://github.com/Arindam200/awesome-ai-apps.git
 cd awesome-ai-apps/advance_ai_agents/job_finder_agent
 ```
+
+Run the remaining commands from this project directory.
 
 Create a virtual environment:
 
@@ -99,7 +99,7 @@ Verify the OpenAI Agents SDK installation:
 python -c "from agents import Agent; print('Dependencies installed successfully')"
 ```
 
-Alternatively, using `uv` from this project directory:
+Alternatively, use `uv` instead of the virtual-environment and pip steps above:
 
 ```bash
 uv sync
@@ -119,8 +119,16 @@ BROWSER_AUTH="Your Bright Data Browser Auth"
 
 1. Start the application:
 
+For the pip setup, with your virtual environment activated:
+
 ```bash
-streamlit run app.py
+python -m streamlit run app.py
+```
+
+For the uv setup:
+
+```bash
+uv run streamlit run app.py
 ```
 
 2. Open your browser at http://localhost:8501

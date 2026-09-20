@@ -52,27 +52,56 @@ job_finder_agent/
 
 ## Installation
 
-1. Clone the repository:
+Run all installation commands from the project directory:
+
+Clone the repository and enter the project directory:
 
 ```bash
 git clone https://github.com/Arindam200/awesome-ai-apps.git
-cd advance_ai_agents/job_finder_agent
+cd awesome-ai-apps/advance_ai_agents/job_finder_agent
 ```
 
-2. Create a virtual environment:
+Create a virtual environment:
 
 ```bash
 python -m venv venv
-source venv/bin/activate  # On Windows, use: venv\Scripts\activate
 ```
 
-3. Install dependencies:
+Activate it.
+
+macOS/Linux:
 
 ```bash
-# Using pip
-pip install -r requirements.txt
+source venv/bin/activate
+```
 
-# Or using uv (recommended)
+Windows PowerShell:
+
+```powershell
+.\venv\Scripts\Activate.ps1
+```
+
+Windows Command Prompt:
+
+```bat
+venv\Scripts\activate.bat
+```
+
+Install dependencies:
+
+```bash
+python -m pip install -r requirements.txt
+```
+
+Verify the OpenAI Agents SDK installation:
+
+```bash
+python -c "from agents import Agent; print('Dependencies installed successfully')"
+```
+
+Alternatively, using `uv` from this project directory:
+
+```bash
 uv sync
 ```
 
